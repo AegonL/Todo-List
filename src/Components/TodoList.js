@@ -73,10 +73,10 @@ const TodoList = () => {
                     </button>
                   </div>
                 </div>
-
                 {todoEditing === todo.id ? (
                   <form>
                     <input
+                      className={classes.editinput}
                       type="text"
                       onChange={(e) => setEditedText(e.target.value)}
                     />
